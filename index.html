@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="shortcut icon" type="image/jpg" href="./favic.png"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./stle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, User-scalable=no">
+   
+    <title>Montes Vergara - Generador de Recibos</title>
+</head>
+<body>
+  <div class="admin">
+      <div id="login"  class="login">
+        <img src="./logito.png" alt="logo" id="login-logo">
+        <input type="password" onchange="captura(this.value)" name="password" id="password" placeholder="write your Password" >
+        <button id="btn-enter" onclick="security()">Enter</button>
+      </div>
+      <div id="dashboard" class="dashboard">
+        <div class="logo-container">
+          <img id="logo-dash" src="./logito.png" alt="logo">
+          <label for="">FACTURACION</label>
+        </div>
+        
+        <input type="text" class="dashitem" onchange="fnumrecibo(this.value)" id="num-recibo" placeholder="Numero Recibo">
+        <input type="text" class="dashitem" onchange="ffecha(this.value)" id="fecha" placeholder="Fecha">
+        <div id='content-concepto'>
+          <div class="items-concepts ">
+            <input type="text" class="inp"  id="concepto0" placeholder="Concepto">
+            
+            <input type="text" class="inp" id="valconcepto0" placeholder="Valor">
+          </div>
+          
+        </div>
+        <button class="btn-add" onclick="add()">Add Row</button>
+
+        <button class="btn-aceptar" onclick="procesar()">Aceptar</button>
+      </div>
+
+    </div>
+  <div id='app-content' class="app-content">
+    
+    <div id='App' class="App">
+        <img id="logo" src='./logito.png'></img>
+        <label class="info-brand">350 341 7243</label>
+        <div id="bar">
+          <div class="bar-item">
+            <label class="bar-item-l">RECIBO N.</label>
+            <label id="numrecibo" class="bar-item-l">######</label>
+          </div>
+          <div class="bar-item">
+            <label class="bar-item-l">Fecha: </label>
+            <label id="fecha-" class="bar-item-l">##/##/##</label>
+          </div>
+          
+        </div>
+        <div id="concepts">
+
+        </div>
+        <div id='cont-total'>
+          <div class='concept-item'>
+            <label class='concept-item-l1'>Total</label> 
+            <label id='total-concept' class='concept-item-l2'>0</label>     
+          </div>
+        </div>
+        <div class="footer">
+          <img id='firma' src="./firma.png" alt="" srcset="">
+          
+            <label id='cuv' for="">CODIGO UNICO DE VERFICACION:</label>
+            <label id='cuv-c' for="">#</label>
+          
+          
+          <label id="despedida" for="">*** GRACIAS ***</label>
+        </div>
+        
+      </div>
+  </div>
+
+  
+    <script  src="./html2canvas.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    
+</body>
+</html>

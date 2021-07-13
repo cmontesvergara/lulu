@@ -1,0 +1,230 @@
+*{
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  overflow-y: hidden;
+}
+
+
+
+
+
+
+
+
+/*  Panel de Administracion  */
+.admin{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/*  Login */
+.login{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: max-content;
+  padding: 5px;
+  align-items: center;
+ 
+  box-shadow: 5px 12px 35px rgb(211, 210, 210);
+}
+#login-logo{
+  display: flex;
+  width: 90%;
+  margin-top: 7%;
+}
+#password{
+  margin-top: 10%;
+  display: flex;
+  width: 90%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #FF4081;
+}
+#btn-enter{
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #FF4081;
+  color: #FF4081;
+  border-radius: 10px;
+  
+}
+
+
+
+/*  DashBOard */
+.dashboard{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #303F9F;
+  height: 25%;
+  min-height: 25%;
+  box-shadow: 0px 10px 15px #C5CAE9;
+}
+#logo-dash{
+  display: flex;
+  width: 80%;
+  margin-bottom: 5px;
+}
+.logo-container > label{
+  color: #ffffff;
+}
+.dashitem{
+  height: 7%;
+  min-height: 7%;
+  margin-top: 8%;
+  outline: none;
+  border: none;
+  width: 90%;
+  border-bottom: 1px solid #FF4081;
+  font-size: 16px;
+  
+}
+::placeholder { 
+    color:#FF4081;
+   
+  }
+
+#content-concepto{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: max-content;
+  overflow-y: scroll;
+  background-color: #ff408017;
+}
+.items-concepts{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+.inp{
+  display: flex;
+  width: 49%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #FF4081;
+  background-color: #ff408000;
+  font-size: 16px;
+  margin-top: 8%;
+}
+.btn-add{
+  height: 4%;
+  min-height: 4%;
+  margin-top: 8%;
+  outline: none;
+  border-radius: 20px;
+  color: #FF4081;
+  width: 25%;
+  border: 1px solid #FF4081;
+  font-size: 16px;
+}
+.btn-add:hover,.btn-aceptar:hover{
+  border: 1px solid #303F9F;
+  color: #303F9F;
+  cursor: pointer;
+}
+.btn-aceptar{
+  height: 6%;
+  min-height: 6%;
+  margin: 8%;
+  outline: none;
+  border-radius: 5px;
+  color: #FF4081;
+  width: 90%;
+  border: 1px solid #FF4081;
+  font-size: 16px;
+  
+}
+
+/*  Canvas */
+.app-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  min-height: max-content;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 82mm;
+  height: max-content;
+  margin-bottom: 8%;
+}
+#logo{
+  display: flex;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+#bar{
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#cont-total{
+  display: flex;
+  width: 100%;
+  border-top: 1px solid black;
+}
+.concept-item{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#concepts{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+#cuv{
+  margin-top: 8%;
+}
+#firma{
+  display: flex;
+  width: 100%;
+}
